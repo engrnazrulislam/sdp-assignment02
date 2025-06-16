@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,53 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
     <nav>
-        <div class="search-container d-flex justify-content-center p-5 gap-2">
-            <input id="search-box" class="search-box rounded px-2" type="text" class="form-control" placeholder="Search Here">
+        <div class="search-container d-flex justify-content-center p-5 gap-3">
+            <input id="search-box" class="search-box rounded px-2" type="text" class="form-control"
+                placeholder="Search your drink">
             <button id="search-btn" type="button" class="search-btn btn btn-danger">Search</button>
         </div>
     </nav>
     <main class="main-container">
         <div class="row gap-2 d-flex justify-content-center align-items-top">
-            <div class="col-8 d-flex justify-content-between gap-2 align-items-top flex-wrap" id="card-container">
-                
+            <div class="col-8 gap-2 d-flex justify-content-around align-items-top flex-wrap" id="card-container">
+
             </div>
-            <div class="col-3 border border-secondary"id="add-to-card-container">
-                
+            <div class="col-3" id="add-to-card-container">
+                <h3>Total Cart: <span id="total-cart">0</span> </h3>
+                <hr>
+                <div class="add-to-cards">
+                    <table class="table align-middle table-fixed">
+                        <thead class="align-middle">
+                            <tr class="align-middle">
+                                <th class="text-center" scope="col">Sl</th>
+                                <th class="text-center" scope="col">Img</th>
+                                <th class="text-center" scope="col">Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="add-to-cards">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal-section">
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="card-details" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="modal-content">
+                    
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -31,4 +65,5 @@
     <script src="app.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
