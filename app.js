@@ -24,7 +24,7 @@ const displayData = (data) => {
     allData.forEach((drinkItem) => {
         const div = document.createElement('div');
         div.classList.add('card','p-2','border','border-rounded','shadow');
-        div.style.width="16rem";
+        div.style.width="20rem";
 
         div.innerHTML = `
             <div>
