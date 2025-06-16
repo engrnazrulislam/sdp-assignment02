@@ -24,7 +24,7 @@ const displayData = (data) => {
     allData.forEach((drinkItem) => {
         const div = document.createElement('div');
         div.classList.add('card','p-2','border','border-rounded','shadow');
-        div.style.width="18rem";
+        div.style.width="16rem";
 
         div.innerHTML = `
             <div>
@@ -64,7 +64,7 @@ const addToCard=(data)=>{
     const total_cart=document.getElementById('total-cart');
     data.forEach((c_data)=>{
         if(added_cards.length > 6){
-            alert("You can not add more than 7 cart!!");
+            alert("You can not add more than 7 card!!");
             return;
         }
        if(!added_cards.includes(c_data.idDrink)){
